@@ -13,5 +13,9 @@ public class GameWindow {
         jframe.setLocationRelativeTo(null);
         jframe.add(gamePanel);
         jframe.setVisible(true);
+
+
+
+
     }
 }
