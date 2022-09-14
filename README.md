@@ -6,5 +6,6 @@
         <dt><li>v <b>0.002</b>-detect pressing key on window</li></dt><br>
         <dt><li>v <b>0.003</b>-"teleport" square to mouse when pressed and move, still working moved by <b>"w,a,s,d"</b></dt>
         <dd><small><li>update README</li></small></dd>
+        <dt><li>v<b>0.004</b>-moving rect+changing to random color every touch border</li></dt>
     </dl>
 </ul>
