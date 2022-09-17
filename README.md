@@ -9,6 +9,6 @@
         <dt><li>v<b>0.004</b>-moving rect+changing to random color every touch border</li></dt>
         <dt><li>v<b>0.005</b>-create first graphic for game</li></dt>
         <dt><li>v<b>0.006</b>-finishing gameloop, cap fps to 120, move fps check to Game.java</li></dt>
-        
+        <dt><li>v<b>0.006/2</b>-add new sqare on click</li></dt>
 </dl>
 </ul>
