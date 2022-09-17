@@ -6,17 +6,17 @@ import inputs.MouseInputs;
 import javax.swing.*;
 import java.awt.*;
 
-import java.util.TimerTask;
-
 
 public class GamePanel extends JPanel {
 
     private float XDelta=100,YDelta=100;
     private int frame=0;
     private long lastCheck=0;
-    private float XDir=0.01f, YDir= 0.01f;
+    private float speed = 0.5f;
+    private float XDir=speed, YDir= speed;
     private int R=0,G=0,B=0;
     Color color=new Color(R,G,B);
+    private int width=100,height=100;
     private MouseInputs mouseInputs;
     public GamePanel(){
         mouseInputs=new MouseInputs(this);
@@ -39,17 +39,12 @@ public class GamePanel extends JPanel {
     @Override
     public void paintComponent(Graphics g){
         super.paintComponent(g);
+
+
         updateRectangle();
         //g.setColor(Color.BLUE);
         g.setColor(color);//własny kolor
-        g.fillRect((int)XDelta,(int)YDelta,100,100);
-        frame++;
-        if(System.currentTimeMillis()-lastCheck>=1000){
-            lastCheck=System.currentTimeMillis();
-            System.out.println("FPS: "+frame);
-            frame=0;
-        }
-        repaint();
+        g.fillRect((int)XDelta,(int)YDelta,width,height);
     }
 
     private void updateRectangle() {

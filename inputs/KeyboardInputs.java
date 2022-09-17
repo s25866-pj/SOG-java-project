@@ -2,6 +2,7 @@ package inputs;
 
 import main.GamePanel;
 
+import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
@@ -31,6 +32,8 @@ public class KeyboardInputs implements KeyListener {
             case KeyEvent.VK_D:
                 gamePanel.changeXDelta(speed);
                 break;
+
+
         }
     }
 
