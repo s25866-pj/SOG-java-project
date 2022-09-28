@@ -3,34 +3,31 @@ package main;
 import inputs.KeyboardInputs;
 import inputs.MouseInputs;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import static utilz.Constants.PlayerConstants.*;
 import static utilz.Constants.Directions.*;
 
-import java.io.File;
+
 import java.util.ArrayList;
-import java.io.IOException;
-import java.io.InputStream;
+
 
 
 public class GamePanel extends JPanel {
 
     private float XDelta=100,YDelta=100;
-    private float speed = 1f;
-    private float XDir=speed, YDir= speed;
-    //private int width=100,height=100;
+    private final float speed = 1f;
+    //private float XDir=speed, YDir= speed;
+
     private MouseInputs mouseInputs;
-    private ArrayList<ArrayList<BufferedImage>>img=new ArrayList<>();
-    private ArrayList<InputStream> is=new ArrayList<InputStream>();
+    private ArrayList<ArrayList<BufferedImage>>img;//=new ArrayList<>();
     private int aniTick=0, aniIndex=0, aniSpeed=15;
     private int playerAction=IDLE;
     private int playerDir=-1;
     private boolean moving=false;
-
     private int size=3;
+
     
     public GamePanel(){
 
@@ -61,9 +58,7 @@ public class GamePanel extends JPanel {
     @Override
     public void paintComponent(Graphics g){
         super.paintComponent(g);
-        updateAnimationTick();
-        setAnimation();
-        updatePosition();
+
         g.drawImage(img.get(playerAction).get(aniIndex),(int)XDelta,(int)YDelta,64*size,40*size,null);
     }
 
@@ -103,18 +98,9 @@ public class GamePanel extends JPanel {
         }
     }
 
-    private void updateRectangle() {
-        XDelta+=XDir;
-        if(XDelta>300||XDelta<0){
-            XDir*=-1;
-        }
-        YDelta+=YDir;
-        if(YDelta>300||YDelta<0){
-            YDir*=-1;
-        }
+    public void updateGame() {
+        updateAnimationTick();
+        setAnimation();
+        updatePosition();
     }
-
-
-
-
 }
