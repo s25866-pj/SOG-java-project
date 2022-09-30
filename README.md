@@ -12,6 +12,7 @@
         <dt><li>v<b>0.007</b>-read from file, make basic standing animation, remove square. </li></dt>
         <dt><li>v<b>0.008</b>-create class to load img, make animation loop, add different animation on pressed key (actually running and idle), <span style="color: red">i'm proud of myself so much </span></li></dt>
         <dt><li>v<b>0.009</b>update game loop, crete game tick (for logic)</li></dt>
+        <dt><li>v<b>0.010</b>Player class!! attack animation, upgrade animation check and switch,</li></dt>
 </dl>
 </ul>
 
