@@ -1,5 +1,6 @@
 package entities;
 
+import main.Game;
 import main.LoadIMG;
 
 import java.awt.*;
@@ -13,10 +14,11 @@ public class Player extends Entity {
     private static boolean moving=false,attacking=false;
     private final float playerSpeed = 2f;
     private int playerAction=IDLE;
-    private int aniTick=0, aniIndex=0, aniSpeed=15, size=3;
+    private float size=Game.SCALE+0.5f;
+    private int aniTick=0, aniIndex=0, aniSpeed=15;
     private boolean left,up,down,right;
 
-    public Player(float x, float y) {
+    public Player(int x1, int i, float x, float y) {
         super(x, y);
         loadAnimations();
     }
@@ -27,7 +29,7 @@ public class Player extends Entity {
         setAnimation();
     }
     public void render(Graphics g){
-        g.drawImage(img.get(playerAction).get(aniIndex),(int)x,(int)y,64*size,40*size,null);
+        g.drawImage(img.get(playerAction).get(aniIndex),(int)x,(int)y, (int)(64*size),(int)(40*size),null);
 
     }
     private void loadAnimations(){

@@ -10,6 +10,7 @@ public class Constants {
     public static class PlayerConstants{
         public static String PATH_1="/Captain Clown Nose/Captain Clown Nose without Sword/";
         public static String PATH_2="/Captain Clown Nose/Captain Clown Nose with Sword/";
+
         public static final int RUNNING = 0;
         public static final int IDLE = 1;
         public static final int JUMPING = 2;
