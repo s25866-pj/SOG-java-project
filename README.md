@@ -14,6 +14,7 @@
         <dt><li>v<b>0.009</b>update game loop, crete game tick (for logic)</li></dt>
         <dt><li>v<b>0.010</b>Player class!! attack animation, upgrade animation check and switch,</li></dt>
         <dt><li>v<b>0.011</b>easy Level creating by using RGB color </li></dt>
+        <dt><li>v<b>0.012</b>player hitbox </li></dt>
 </dl>
 </ul>
 
