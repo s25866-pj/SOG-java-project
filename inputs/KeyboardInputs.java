@@ -1,5 +1,6 @@
 package inputs;
 
+import game_states.GameStates;
 import main.GamePanel;
 
 import java.awt.event.KeyEvent;
@@ -18,47 +19,26 @@ public class KeyboardInputs implements KeyListener {
 
     @Override
     public void keyPressed(KeyEvent e) {
-        switch(e.getKeyCode()){
-            case KeyEvent.VK_A:
-                gamePanel.getGame().getPlayer().setLeft(true);
-                break;
-            case KeyEvent.VK_W:
-                gamePanel.getGame().getPlayer().setUp(true);
-                break;
-            case KeyEvent.VK_S:
-                gamePanel.getGame().getPlayer().setDown(true);
-                break;
-            case KeyEvent.VK_D:
-                gamePanel.getGame().getPlayer().setRight(true);
-                break;
-            case KeyEvent.VK_E:
-                break;
-            case KeyEvent.VK_SPACE:
-                gamePanel.getGame().getPlayer().setJump(true);
-                break;
-
-
+        switch (GameStates.state) {
+            case PLAYING -> {
+                gamePanel.getGame().getPlaying().KeyPressed(e);
+            }
+            case MENU -> {
+                gamePanel.getGame().getMenu().KeyPressed(e);
+            }
         }
     }
 
     @Override
     public void keyReleased(KeyEvent e) {
-        switch(e.getKeyCode()){
-            case KeyEvent.VK_A:
-                gamePanel.getGame().getPlayer().setLeft(false);
-                break;
-            case KeyEvent.VK_W:
-                gamePanel.getGame().getPlayer().setUp(false);
-                break;
-            case KeyEvent.VK_S:
-                gamePanel.getGame().getPlayer().setDown(false);
-                break;
-            case KeyEvent.VK_D:
-                gamePanel.getGame().getPlayer().setRight(false);
-                break;
-            case KeyEvent.VK_SPACE:
-                gamePanel.getGame().getPlayer().setJump(false);
-                break;
+        switch (GameStates.state) {
+            case PLAYING -> {
+                gamePanel.getGame().getPlaying().KeyRelease(e);
+            }
+            case MENU -> {
+                gamePanel.getGame().getMenu().KeyRelease(e);
+            }
         }
+
     }
 }
