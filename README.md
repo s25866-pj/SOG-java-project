@@ -15,6 +15,7 @@
         <dt><li>v<b>0.010</b>Player class!! attack animation, upgrade animation check and switch,</li></dt>
         <dt><li>v<b>0.011</b>easy Level creating by using RGB color </li></dt>
         <dt><li>v<b>0.012</b>player hitbox </li></dt>
+        <dt><li>v<b>0.013</b><span style="color: #23007b"> JUMPING, GRAVITY </span> and <span style="color: green"> NEW ANIMATIONS WHEN JUMP AND FALL </span> </li></dt>
 </dl>
 </ul>
 
