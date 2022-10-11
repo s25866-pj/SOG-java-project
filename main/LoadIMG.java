@@ -20,6 +20,8 @@ static BufferedImage tempIMG;
 static InputStream tempIS;
 public static final String LVL_1_MAP= "/levels/level_01_data.png";
 public static String TERRAIN_PATH="/Terrain/basic terrain/Terrain (32x32).png";
+public static String MENU_BUTTONS="/Buttons/MenuButtons/button_atlas.png";
+public static String MENU_BACKGROUND="/Buttons/MenuButtons/menu_background.png";
 
     public static BufferedImage GetSpriteAtlas(String fileName){
             tempIS = LoadIMG.class.getResourceAsStream(fileName);

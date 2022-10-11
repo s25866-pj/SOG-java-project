@@ -17,6 +17,7 @@
         <dt><li>v<b>0.012</b>player hitbox </li></dt>
         <dt><li>v<b>0.013</b><span style="color: #23007b"> JUMPING, GRAVITY </span> and <span style="color: green"> NEW ANIMATIONS WHEN JUMP AND FALL </span> </li></dt>
         <dt><li>v<b>0.014</b>Game states, switch between "menu" and game(game paused when switch to menu) </li></dt>
+        <dt><li>v<b>0.015</b>Menu buttons,menu graphic, little fixes </li></dt>
 </dl>
 </ul>
 

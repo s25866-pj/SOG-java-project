@@ -13,7 +13,7 @@ import static utilz.HelpMethods.*;
 public class Player extends Entity {
     private ArrayList<ArrayList<BufferedImage>>img;
     private static boolean moving=false,attacking=false;
-    private final float playerSpeed = 2f;
+    private final float playerSpeed = 1.0f*Game.SCALE;
     private int playerAction=IDLE;
     private float size=Game.SCALE+0.5f;
     private int aniTick=0, aniIndex=0, aniSpeed=15;
@@ -31,7 +31,7 @@ private boolean inAir=false;
     public Player( float x, float y,int width, int height) {
         super(x, y,width,height);
         loadAnimations();
-        initHitbox(x,y,20*Game.SCALE,27*Game.SCALE);
+        initHitbox(x,y,(int)(20*Game.SCALE),(int)(27*Game.SCALE));
     }
     public void update(){
 
