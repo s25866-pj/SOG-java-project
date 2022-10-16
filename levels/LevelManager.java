@@ -1,7 +1,7 @@
 package levels;
 
 import main.Game;
-import main.LoadIMG;
+import utilz.LoadIMG;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

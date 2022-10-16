@@ -1,7 +1,7 @@
 package game_states;
 
 import main.Game;
-import main.LoadIMG;
+import utilz.LoadIMG;
 import ui.MenuButton;
 
 import java.awt.*;
