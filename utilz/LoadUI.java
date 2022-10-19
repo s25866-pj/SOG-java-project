@@ -9,6 +9,7 @@ public class LoadUI {
     private static final String PATH="/Buttons/PauseButtons/";
     public static final String PAUSE_PATH=PATH+"pause_menu.png";
     public static final String PAUSE_SOUNDS_BUTTONS=PATH+"sound_button.png";
+    public static final String PAUSE_URM_BUTTONS=PATH+"urm_buttons.png";
 
     
     public static BufferedImage GetPauseAtlas(String name){
