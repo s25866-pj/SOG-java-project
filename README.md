@@ -19,6 +19,7 @@
         <dt><li>v<b>0.014</b>Game states, switch between "menu" and game(game paused when switch to menu) </li></dt>
         <dt><li>v<b>0.015</b>Menu buttons,menu graphic, little fixes </li></dt>
         <dt><li>v<b>0.016</b>Pause game menu, buttons(not working yet) </li></dt>
+        <dd><li>v<b>0.016/a</b>buttons now react (graphic) on click and press </li></dd>
 </dl>
 </ul>
 

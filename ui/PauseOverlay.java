@@ -35,7 +35,8 @@ public class PauseOverlay {
     }
 
     public void update(){
-
+        musicButton.update();
+        sfxButton.update();
     }
     public void draw(Graphics g){
     g.drawImage(backgroundIMG,bgX,bgY,bgWidth,bgHeight,null);
@@ -48,16 +49,47 @@ public class PauseOverlay {
     }
 
     public void mousePressed(MouseEvent e) {
-
+        if(isIn(e,musicButton)){
+            musicButton.setMousePressed(true);
+        }
+        else if(isIn(e,sfxButton)){
+            sfxButton.setMousePressed(true);
+        }
     }
 
 
     public void mouseReleased(MouseEvent e) {
+        if(isIn(e,musicButton)){
+            if(musicButton.isMousePressed()){
+                musicButton.setMuted(!musicButton.isMuted());
+            }
 
+        }
+        else if(isIn(e,sfxButton)){
+            if(sfxButton.isMousePressed()){
+                sfxButton.setMuted(!sfxButton.isMuted());
+            }
+
+        }
+        musicButton.resetBooleans();
+        sfxButton.resetBooleans();
     }
 
 
     public void mouseMoved(MouseEvent e) {
+        musicButton.setMouseOver(false);
+        sfxButton.setMouseOver(false);
+
+        if(isIn(e,musicButton)){
+            musicButton.setMouseOver(true);
+        }
+        else if(isIn(e,sfxButton)){
+            sfxButton.setMouseOver(true);
+        }
+    }
+    private boolean isIn(MouseEvent e,PauseButton b){
+        return b.getBounds().contains(e.getX(),e.getY());
+
 
     }
 }
