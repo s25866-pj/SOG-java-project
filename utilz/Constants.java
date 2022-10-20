@@ -20,6 +20,14 @@ public class Constants {
             public static final int UMR_SIZE= (int) (UMR_DEFAULT_SIZE*Game.SCALE);
 
         }
+        public static class VolumeSlider{
+            public static final int VOLUME_DEFAULT_WIDTH=28;
+            public static final int VOLUME_DEFAULT_HEIGHT=44;
+            public static final int SLIDER_DEFAULT_WIDTH=215;
+            public static final int VOLUME_HEIGHT= (int) (VOLUME_DEFAULT_HEIGHT*Game.SCALE);
+            public static final int VOLUME_WIDTH= (int) (VOLUME_DEFAULT_WIDTH*Game.SCALE);
+            public static final int SLIDER_WIDTH= (int) (SLIDER_DEFAULT_WIDTH*Game.SCALE);
+        }
     }
     public static class Directions{
         public static final int LEFT=0;

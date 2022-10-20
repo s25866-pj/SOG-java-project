@@ -130,4 +130,10 @@ public class Playing extends State implements StateMethods {
                 break;
         }
     }
+
+    public void mouseDragged(MouseEvent e) {
+        if(paused){
+            pauseOverlay.mouseDragged(e);
+        }
+    }
 }

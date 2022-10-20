@@ -21,6 +21,7 @@
         <dt><li>v<b>0.016</b>Pause game menu, buttons(not working yet) </li></dt>
         <dd><li>v<b>0.016/a</b>buttons now react (graphic) on click and press </li></dd>
         <dt><li>v<b>0.017</b>menu and unpause game working, esc as pause game</li></dt>
+        <dt><li>v<b>0.018</b>slider for sound, reacting on click and move on slider</li></dt>
 </dl>
 </ul>
 
