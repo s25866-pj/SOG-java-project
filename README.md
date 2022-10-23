@@ -23,6 +23,7 @@
         <dt><li>v<b>0.017</b>menu and unpause game working, esc as pause game</li></dt>
         <dt><li>v<b>0.018</b>slider for sound, reacting on click and move on slider</li></dt>
         <dt><li>v<b>0.018/a</b>Add temp picture to git</li></dt>
+        <dt><li>v<b>0.019</b>Bigger level</li></dt>
 
 
 </dl>

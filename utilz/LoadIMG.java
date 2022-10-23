@@ -7,8 +7,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-import static main.Game.TILES_IN_HEIGHT;
-import static main.Game.TILES_IN_WIDTH;
 import static utilz.Constants.PlayerConstants.*;
 
 public class LoadIMG {
@@ -18,10 +16,12 @@ static ArrayList<InputStream> temp=new ArrayList<>();
 static ArrayList<BufferedImage> tempImg=new ArrayList<>();
 static BufferedImage tempIMG;
 static InputStream tempIS;
-public static final String LVL_1_MAP= "/levels/level_01_data.png";
+//public static final String LVL_1_MAP= "/levels/level_01_data.png";
+public static final String LVL_1_MAP= "/levels/level_02_data.png";
 public static final String TERRAIN_PATH="/Terrain/basic terrain/Terrain (32x32).png";
 public static final String MENU_BUTTONS="/Buttons/MenuButtons/button_atlas.png";
 public static final String MENU_BACKGROUND="/Buttons/MenuButtons/menu_background.png";
+public static final String MENU_BACKGROUND_IMG="/Buttons/MenuButtons/background_menu.png";
 
     public static BufferedImage GetSpriteAtlas(String fileName){
             tempIS = LoadIMG.class.getResourceAsStream(fileName);
@@ -59,8 +59,9 @@ public static final String MENU_BACKGROUND="/Buttons/MenuButtons/menu_background
     }
 
     public static int [][] GetLevelData(){
-        int [][] lvlData = new int[TILES_IN_HEIGHT][TILES_IN_WIDTH];
+
         BufferedImage img =GetSpriteAtlas(LVL_1_MAP);
+        int [][] lvlData = new int[img.getHeight()][img.getWidth()];
 
         for (int j = 0; j < img.getHeight(); j++) {
             for (int i = 0; i < img.getWidth(); i++) {
